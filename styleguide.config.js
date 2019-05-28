@@ -5,7 +5,6 @@ const docs = [
   'basic',
   'drag',
   'has-header',
-  'dynamic-url',
   'filter-nodes',
   'configure-el-tree',
   'multi-select-nodes',
@@ -27,17 +26,7 @@ module.exports = {
   ribbon: {
     url: 'https://github.com/FEMessage/el-data-tree'
   },
-  sections: [
-    {
-      name: 'Components',
-      components: 'src/*.vue',
-      usageMode: 'expand'
-    },
-    {
-      name: 'Demo',
-      sections: demoSections
-    }
-  ],
+  sections: demoSections,
   webpackConfig: {
     module: {
       rules: [
